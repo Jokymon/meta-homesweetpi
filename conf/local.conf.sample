@@ -37,6 +37,8 @@
 # This sets the default machine to be qemux86-64 if no other machine is selected:
 MACHINE ??= "raspberrypi3"
 
+MACHINE_ESSENTIAL_EXTRA_RRECOMMENDS += "kernel-modules"
+
 #
 # Where to place downloads
 #
