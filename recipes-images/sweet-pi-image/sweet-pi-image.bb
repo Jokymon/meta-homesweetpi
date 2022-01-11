@@ -2,10 +2,9 @@ include recipes-core/images/core-image-minimal.bb
 
 COMPATIBLE_MACHINE = "^rpi$"
 
-DEPENDS += "bcm2835-bootfiles"
+IMAGE_FSTYPES += "rpi-sdimg"
 
 IMAGE_INSTALL_append = "\
-	bcm2835-tests \
 	rpio \
 	rpi-gpio \
 	usbutils \
